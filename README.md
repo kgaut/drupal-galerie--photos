@@ -1,8 +1,7 @@
 # drupal-galerie-photos
 Module créant un nouveau type de contenu "Galerie Photo"
 
-Dépendances
-###
+## Dépendances
 
  - features
  - image
