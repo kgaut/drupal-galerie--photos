@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Galerie Photos feature.
+ */
+
+include_once 'kg_feature_galerie_photos.features.inc';

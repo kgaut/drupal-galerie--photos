@@ -1,0 +1,5 @@
+name = Galerie Photos
+description = Création et gestion d'un type de contenu "Galerie Photo"
+dependencies[] = kg_feature_galerie_photos
+package = KG
+core = 7.x

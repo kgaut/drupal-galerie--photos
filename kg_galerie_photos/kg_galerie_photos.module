@@ -1,0 +1,14 @@
+<?php
+
+function kg_galerie_photos_preprocess_field(&$variables) {
+  if($variables['element']['#bundle'] == 'gallery' && $variables['element']['#field_name'] == 'field_gallery_pictures'){
+    //@todo définir comme admin form settings
+    $classnames = array('lightbox','lol');
+    foreach($variables['items'] as $key => $item){
+      if(!isset($variables['items'][ $key ]['#item']['attributes']['class'])) {
+        $variables['items'][ $key ]['#item']['attributes']['class'] = array();
+      }
+      $variables['items'][ $key ]['#item']['attributes']['class'] += $classnames;
+    }
+  }
+}
