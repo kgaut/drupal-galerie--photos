@@ -1,0 +1,8 @@
+<?php
+
+function kg_galerie_photos_fancybox_preprocess_page(&$vars, $hook) {
+  if (isset($vars['node']) && $vars['node']->type == 'gallery') {
+    drupal_add_js(drupal_get_path('module', 'kg_galerie_photos_fancybox') . '/fancybox/jquery.fancybox.js');
+    drupal_add_js(drupal_get_path('module', 'kg_galerie_photos_fancybox') . '/kg_galerie_photos_fancybox.js');
+  }
+}

@@ -1,0 +1,5 @@
+name = Galerie Photos Intégration Fancybox
+description = Intégration de Fancybox pour le module de galerie photo
+dependencies[] = kg_galerie_photos
+package = Media
+core = 7.x
